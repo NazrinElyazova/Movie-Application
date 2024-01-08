@@ -17,6 +17,5 @@ class ActionCell: UICollectionViewCell {
     func configure(index: String, data: [Genre]) {
         actionLabel.text = index
         self.genre = data
-
     }
 }

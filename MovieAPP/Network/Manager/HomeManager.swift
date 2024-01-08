@@ -12,7 +12,7 @@ class HomeManager: MovieListUseCase {
         NetworkManager.request(model: Movie.self,
                                endpoint: endpoint.rawValue) {
             data, errorMessage in
-            if let errorMessage = errorMessage {
+            if let errorMessage = errorMessage { 
                 completion(nil, errorMessage)
             } else if let data {
                 completion(data, nil)

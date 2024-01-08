@@ -17,7 +17,5 @@ class DescriptionCell: UICollectionViewCell {
     }
     func configure(data: [Details], title: String) {
         overviewLabel.text = title
-        
-        
     }
 }
