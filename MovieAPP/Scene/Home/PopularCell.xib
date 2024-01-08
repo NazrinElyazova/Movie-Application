@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PopularCell" customModule="MovieAPP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="310"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="456" height="310"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spZ-UB-3QX">
+                        <rect key="frame" x="31.999999999999993" y="0.0" width="69.333333333333314" height="23.333333333333332"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrC-sA-02j">
+                        <rect key="frame" x="408" y="0.0" width="36" height="26"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="See all">
+                            <color key="titleColor" systemColor="linkColor"/>
+                        </state>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mXW-2a-Ite">
+                        <rect key="frame" x="0.0" y="42" width="456" height="268"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="16" id="2eS-0a-tn2">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="24" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="gTV-IL-0wX" id="CuB-nL-MCR"/>
+                            <outlet property="delegate" destination="gTV-IL-0wX" id="D4E-iK-Qv5"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="spZ-UB-3QX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CNo-AQ-3vP"/>
+                <constraint firstAttribute="bottom" secondItem="mXW-2a-Ite" secondAttribute="bottom" id="HuO-ss-sIm"/>
+                <constraint firstItem="rrC-sA-02j" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YaZ-6x-NRO"/>
+                <constraint firstAttribute="trailing" secondItem="rrC-sA-02j" secondAttribute="trailing" constant="12" id="ZiM-tX-cYE"/>
+                <constraint firstItem="mXW-2a-Ite" firstAttribute="top" secondItem="rrC-sA-02j" secondAttribute="bottom" constant="16" id="e0a-Vo-n1Z"/>
+                <constraint firstItem="spZ-UB-3QX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="32" id="ePL-P9-0q6"/>
+                <constraint firstItem="mXW-2a-Ite" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iWy-oW-eOx"/>
+                <constraint firstAttribute="trailing" secondItem="mXW-2a-Ite" secondAttribute="trailing" id="tOJ-2M-5eb"/>
+            </constraints>
+            <connections>
+                <outlet property="collection" destination="mXW-2a-Ite" id="yw4-Er-ds9"/>
+                <outlet property="popularLabel" destination="spZ-UB-3QX" id="GDX-iP-fAN"/>
+            </connections>
+            <point key="canvasLocation" x="-35.114503816793892" y="19.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
