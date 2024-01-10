@@ -34,7 +34,7 @@ class MovieDetailsController: UIViewController {
 }
 extension MovieDetailsController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//                        print(viewModel?.movieItems.count)
+        //                        print(viewModel?.movieItems.count)
         return viewModel?.movieItems.count ?? 0
     }
     
@@ -47,7 +47,7 @@ extension MovieDetailsController: UICollectionViewDataSource, UICollectionViewDe
         case .poster(let poster):
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DetailsCell", for: indexPath) as! DetailsCell
             cell.spiderImage.loadImage(url: poster)
-                   
+            
             return cell
             
         case .title(let title):
@@ -57,7 +57,7 @@ extension MovieDetailsController: UICollectionViewDataSource, UICollectionViewDe
             
         case .info(let info):
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GenreCell", for: indexPath) as! GenreCell
-          
+            
             cell.imbdLabel.text = "\(String(describing: info.rating ?? "")) /10 IMBD"
             cell.englishLabel?.text = "\(info.language)"
             if info.length != nil {
@@ -68,6 +68,7 @@ extension MovieDetailsController: UICollectionViewDataSource, UICollectionViewDe
             }
             return cell
             
+            
         case .description(let description):
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DescriptionCell", for: indexPath) as! DescriptionCell
             cell.descriptionLabel.text = description
@@ -76,7 +77,7 @@ extension MovieDetailsController: UICollectionViewDataSource, UICollectionViewDe
         case .cast(let cast):
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopImageBottomLabelCell", for: indexPath) as! TopImageBottomLabelCell
             cell.titleLabel.text = cast
-           
+            
             return cell
             
         case .none:
@@ -105,14 +106,12 @@ extension MovieDetailsController: UICollectionViewDataSource, UICollectionViewDe
         return CGSize(width: Int(collectionView.frame.width) - 32, height: 100)
     }
 }
-
 extension MovieDetailsController {
     func configureXibCells() {
         title = "Details"
         collection.register(UINib(nibName: "\(DetailsCell.self)", bundle: nil), forCellWithReuseIdentifier: "DetailsCell")
         collection.register(UINib(nibName: "\(NameAndSaveCell.self)", bundle: nil), forCellWithReuseIdentifier: "NameAndSaveCell")
         collection.register(UINib(nibName: "\(GenreCell.self)", bundle: nil), forCellWithReuseIdentifier: "GenreCell")
-        collection.register(UINib(nibName: "\(ActionCell.self)", bundle: nil), forCellWithReuseIdentifier: "ActionCell")
         collection.register(UINib(nibName: "\(DescriptionCell.self)", bundle: nil), forCellWithReuseIdentifier: "DescriptionCell")
         collection.register(UINib(nibName: "\(TopImageBottomLabelCell.self)", bundle: nil), forCellWithReuseIdentifier: "TopImageBottomLabelCell")
         

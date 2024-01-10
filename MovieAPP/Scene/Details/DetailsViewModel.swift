@@ -6,12 +6,15 @@
 //
 
 import Foundation
-
-
+//struct Home {
+//    let genres: [Genre]
+//}
 
 class DetailsViewModel {
     private let manager = DetailsManager()
+
     var movieItems = [MovieDetailModel]()
+
     var movieId: Int
     
     init(movieId: Int) {
@@ -33,5 +36,13 @@ class DetailsViewModel {
                 self.success?()
             }
         }
+//        NetworkManager.request(model: Results.self, endpoint: "movie/") {
+//            data, errorMessage in
+//            if let errorMessage = errorMessage {
+//                self.error?(errorMessage)
+//            } else if let data {
+//                self.tems.append(.init(genres: data.results ))
+//            }
+//        }
     }
 }

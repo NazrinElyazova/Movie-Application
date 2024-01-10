@@ -9,8 +9,6 @@ import Foundation
 
 enum DetailsEndpoint: String {
     case detailsMovie = "movie/"
- 
-    
 }
 
 // MANAGER endpoint.rawvalue//RAW+"\(movieID)"

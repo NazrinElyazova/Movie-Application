@@ -7,6 +7,10 @@
 
 import Foundation
 
+//struct Results: Codable {
+//    let results: [Genre]
+//}
+
 // MARK: - Details
 struct Details: Codable {
     let adult: Bool?
@@ -123,8 +127,9 @@ enum MovieDetailItemType: Codable {
 
 struct MovieDetailModel: Codable {
     let type: MovieDetailItemType
-//    let data: Any?
+//    let janr: Genre
 }
+
 
     // MARK: - Enums and Structures for ViewModel
     
