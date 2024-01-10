@@ -38,10 +38,6 @@ class GenreCell: UICollectionViewCell {
         
     }
     
-    func configure2() {
-        
-    }
-    
 }
 extension GenreCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
