@@ -20,11 +20,7 @@ class TopImageBottomLabelCell: UICollectionViewCell {
     
     @IBOutlet weak var topImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    
-    //    var people = [Cast]()
-    //    var didPersonSelect: ((Int) -> Void)?
-    //    var delegate: InfoDelegate?
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         topImage.layer.cornerRadius = 16

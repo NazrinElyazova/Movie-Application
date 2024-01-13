@@ -10,7 +10,11 @@ import UIKit
 class GenreCell: UICollectionViewCell {
     
     var movieItems: [Genre]?
+    
 //    var detail = [Details]()
+//    var viewModel = [DetailsViewModel]()
+    
+//    var items = [Genre]()
     
     @IBOutlet weak var pg13Label: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
@@ -41,18 +45,23 @@ class GenreCell: UICollectionViewCell {
 }
 extension GenreCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        print(movieItems.count)
-        movieItems?.count ?? 9
+        //        print(movieItems?.count)
+        return movieItems.count ?? 0
+        
+        //        return items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(ActionCell.self)", for: indexPath) as! ActionCell
-        cell.actionLabel.text = movieItems?[indexPath.row].name
+        //        cell.actionLabel.text = movieItems[indexPath.row]
+        //        cell.actionLabel.text = items[indexPath.item].name
+        
+        cell.configureAction(data: movieItems[indexPath.item])
         return cell
         
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        .init(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
+    
 }
-func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    .init(width: collectionView.frame.width, height: collectionView.frame.height)
-}
-
