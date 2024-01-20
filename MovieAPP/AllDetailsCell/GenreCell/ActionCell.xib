@@ -32,6 +32,11 @@
                 <constraint firstAttribute="trailing" secondItem="Q9Y-VL-AqA" secondAttribute="trailing" id="qye-iL-rcT"/>
                 <constraint firstItem="Q9Y-VL-AqA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zRo-Ee-CSd"/>
             </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="actionLabel" destination="Q9Y-VL-AqA" id="hqc-kx-zgh"/>
             </connections>

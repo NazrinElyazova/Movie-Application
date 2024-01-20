@@ -15,7 +15,8 @@ class DescriptionCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    func configure(data: [Details], title: String) {
-        overviewLabel.text = title
+    func configure(data: [MovieDetailModel]) {
+//        overviewLabel.text = title
+        overviewLabel.text = data.description
     }
 }

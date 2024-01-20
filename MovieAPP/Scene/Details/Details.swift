@@ -115,8 +115,9 @@ struct MovieInfoModel: Codable {
     let rating: String?
     let genres: [Genre]
     let length: String?
-    let language: [SpokenLanguage]
+    let language: /*[SpokenLanguage]*/ String
 }
+
 enum MovieDetailItemType: Codable {
     case poster(String)
     case title(String)

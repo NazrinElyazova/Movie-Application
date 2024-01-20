@@ -28,7 +28,8 @@ class DetailsViewModel {
             } else if let data {
                 self.movieItems.append(.init(type: .poster(data.backdropPath ?? "" )))
                 self.movieItems.append(.init(type: .title(data.originalTitle ?? "" )))
-                self.movieItems.append(.init(type: .info(MovieInfoModel(rating: "\(data.voteAverage ?? 0)", genres: data.genres ?? [Genre](), length: "\(data.runtime ?? 0)", language: data.spokenLanguages ?? [SpokenLanguage]()))))
+                self.movieItems.append(.init(type: .info(MovieInfoModel(rating: "\(data.voteAverage ?? 0)", genres: data.genres ?? [Genre](), length: "\(data.runtime ?? 0)", language: data.originalLanguage ?? ""))))
+                self.movieItems.append(.init(type: .description(data.overview ?? "")))
                 self.success?()
             }
         }

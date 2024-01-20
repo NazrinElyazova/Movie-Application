@@ -10,13 +10,13 @@ import UIKit
 class MovieDetailsController: UIViewController {
     var viewModel: DetailsViewModel?
     
-
+    
     
     @IBOutlet weak var collection: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         configureXibCells()
         configureViewModel()
     }
@@ -66,12 +66,14 @@ extension MovieDetailsController: UICollectionViewDataSource, UICollectionViewDe
             if info.rating != nil {
                 cell.pg13Label?.text = info.rating
             }
+            
+            cell.configure(data: info.genres)
             return cell
             
             
         case .description(let description):
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DescriptionCell", for: indexPath) as! DescriptionCell
-            cell.descriptionLabel.text = description
+            cell.overviewLabel.text = description
             return cell
             
         case .cast(let cast):
@@ -97,7 +99,7 @@ extension MovieDetailsController: UICollectionViewDataSource, UICollectionViewDe
         case .info:
             return CGSize(width: Int(collectionView.frame.width) - 32, height: 260)
         case .description:
-            return CGSize(width: Int(collectionView.frame.width) - 32, height: 288)
+            return CGSize(width: Int(collectionView.frame.width) - 32, height: 138)
         case .cast:
             return CGSize(width: Int(collectionView.frame.width) - 32, height: 300)
         case .none:
