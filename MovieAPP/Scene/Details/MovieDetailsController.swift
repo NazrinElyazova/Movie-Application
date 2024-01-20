@@ -95,13 +95,13 @@ extension MovieDetailsController: UICollectionViewDataSource, UICollectionViewDe
         case .poster:
             return CGSize(width: Int(collectionView.frame.width) - 32, height: 240)
         case .title:
-            return CGSize(width: Int(collectionView.frame.width) - 32, height: 100)
+            return CGSize(width: Int(collectionView.frame.width) - 32, height: 60)
         case .info:
-            return CGSize(width: Int(collectionView.frame.width) - 32, height: 260)
+            return CGSize(width: Int(collectionView.frame.width) - 32, height: 250)
         case .description:
-            return CGSize(width: Int(collectionView.frame.width) - 32, height: 138)
+            return CGSize(width: Int(collectionView.frame.width) - 32, height: 110)
         case .cast:
-            return CGSize(width: Int(collectionView.frame.width) - 32, height: 300)
+            return CGSize(width: Int(collectionView.frame.width) - 32, height: 200)
         case .none:
             break
         }

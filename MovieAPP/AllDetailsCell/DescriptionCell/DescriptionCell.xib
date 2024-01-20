@@ -17,14 +17,14 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNP-al-kRQ">
-                        <rect key="frame" x="0.0" y="0.0" width="132" height="28.666666666666668"/>
+                        <rect key="frame" x="20" y="0.0" width="132" height="28.666666666666668"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4A-DF-iHi">
-                        <rect key="frame" x="0.0" y="36.666666666666664" width="327" height="103.33333333333334"/>
+                        <rect key="frame" x="20" y="30.666666666666664" width="287" height="109.33333333333334"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -35,11 +35,11 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="r4A-DF-iHi" secondAttribute="bottom" id="H7a-qB-TTb"/>
-                <constraint firstAttribute="trailing" secondItem="r4A-DF-iHi" secondAttribute="trailing" id="UD8-MB-ckC"/>
+                <constraint firstAttribute="trailing" secondItem="r4A-DF-iHi" secondAttribute="trailing" constant="20" id="UD8-MB-ckC"/>
                 <constraint firstItem="VNP-al-kRQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mKB-pg-lVt"/>
-                <constraint firstItem="r4A-DF-iHi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qjg-PC-LjL"/>
-                <constraint firstItem="VNP-al-kRQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vw4-8M-RMB"/>
-                <constraint firstItem="r4A-DF-iHi" firstAttribute="top" secondItem="VNP-al-kRQ" secondAttribute="bottom" constant="8" id="xFn-No-un2"/>
+                <constraint firstItem="r4A-DF-iHi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="qjg-PC-LjL"/>
+                <constraint firstItem="VNP-al-kRQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="vw4-8M-RMB"/>
+                <constraint firstItem="r4A-DF-iHi" firstAttribute="top" secondItem="VNP-al-kRQ" secondAttribute="bottom" constant="2" id="xFn-No-un2"/>
             </constraints>
             <connections>
                 <outlet property="descriptionLabel" destination="VNP-al-kRQ" id="fcZ-bU-0jk"/>
