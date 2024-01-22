@@ -7,10 +7,6 @@
 
 import Foundation
 
-//struct Results: Codable {
-//    let results: [Genre]
-//}
-
 // MARK: - Details
 struct Details: Codable {
     let adult: Bool?
@@ -106,11 +102,6 @@ struct SpokenLanguage: Codable {
         case name
     }
 }
-
-//struct MovieMedia: Codable {
-//    let url: String?
-//}
-
 struct MovieInfoModel: Codable {
     let rating: String?
     let genres: [Genre]
@@ -128,11 +119,7 @@ enum MovieDetailItemType: Codable {
 
 struct MovieDetailModel: Codable {
     let type: MovieDetailItemType
-//    let janr: Genre
 }
-
-
-    // MARK: - Enums and Structures for ViewModel
     
    
 // CASE POSTER (STRING?)
