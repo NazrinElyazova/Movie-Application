@@ -49,6 +49,6 @@ extension PeopleInfoController: UICollectionViewDataSource, UICollectionViewDele
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        .init(width: collectionView.frame.width, height: 300)
+        .init(width: collectionView.frame.width, height: 350)
     }
 }

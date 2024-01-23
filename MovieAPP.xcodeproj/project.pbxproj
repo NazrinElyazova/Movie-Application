@@ -202,12 +202,12 @@
 			children = (
 				7B6237A32B1B27010053588A /* AppDelegate.swift */,
 				7B6237A52B1B27010053588A /* SceneDelegate.swift */,
+				7B6237A92B1B27010053588A /* Main.storyboard */,
 				7BA444792B23249A0076ADFF /* Helper */,
 				7B09CF5E2B2DAD64000C751F /* AllDetailsCell */,
 				7B35FCBE2B1F297900396A44 /* Network */,
 				7BA444712B230F990076ADFF /* Cell */,
 				7B6237B72B1B28840053588A /* Scene */,
-				7B6237A92B1B27010053588A /* Main.storyboard */,
 				7B6237AC2B1B27030053588A /* Assets.xcassets */,
 				7B6237AE2B1B27030053588A /* LaunchScreen.storyboard */,
 				7B6237B12B1B27030053588A /* Info.plist */,

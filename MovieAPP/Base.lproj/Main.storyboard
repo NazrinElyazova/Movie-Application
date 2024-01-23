@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o6O-5h-W7y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o6O-5h-W7y">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -166,22 +166,6 @@
             </objects>
             <point key="canvasLocation" x="-900" y="-108"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="whM-2b-WfZ">
-            <objects>
-                <viewController id="Ijh-fu-aZk" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MMl-cS-6NO">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="wjh-Gu-Zwg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="zEq-dF-rhu"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="394-X2-i70" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="27" y="1313"/>
-        </scene>
         <!--People Info Controller-->
         <scene sceneID="4kC-JA-PLz">
             <objects>
@@ -221,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEs-Yt-YSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="863" y="1316"/>
+            <point key="canvasLocation" x="-900" y="1311"/>
         </scene>
         <!--People Controller-->
         <scene sceneID="CLE-Gl-fQi">
@@ -318,56 +302,17 @@
                     <connections>
                         <segue destination="zh1-8x-GvI" kind="relationship" relationship="viewControllers" id="pcB-Eh-gul"/>
                         <segue destination="iDj-GR-lcr" kind="relationship" relationship="viewControllers" id="HBr-s1-3oh"/>
-                        <segue destination="aer-3g-JRa" kind="relationship" relationship="viewControllers" id="aNi-7O-0P9"/>
-                        <segue destination="Fhy-pJ-DpS" kind="relationship" relationship="viewControllers" id="gXd-gu-W0E"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="osb-so-xsG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2615" y="1823"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="jpv-qf-U8g">
-            <objects>
-                <viewController id="BaB-Qi-bgY" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="psz-ws-rSZ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="yHh-ID-xP8"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="daI-Ds-KTK"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L84-BG-roB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="27" y="2032"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Bkr-lP-mwi">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aer-3g-JRa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="books.vertical" catalog="system" id="5uG-Eu-slu">
-                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hx5-25-u6Y">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Ijh-fu-aZk" kind="relationship" relationship="rootViewController" id="RD1-vU-Kwz"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ScS-ks-lMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-900" y="1313"/>
-        </scene>
-        <!--Navigation Controller-->
+        <!--People-->
         <scene sceneID="5lw-D9-Hlc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iDj-GR-lcr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="27W-fU-QuR"/>
+                    <tabBarItem key="tabBarItem" title="People" image="heart" catalog="system" id="27W-fU-QuR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="J69-5a-uiE">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -382,33 +327,12 @@
             </objects>
             <point key="canvasLocation" x="-900" y="586.61971830985919"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Nbg-xV-4bX">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fhy-pJ-DpS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="person.crop.circle" catalog="system" id="mKd-rg-4fM"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qR1-64-DXH">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BaB-Qi-bgY" kind="relationship" relationship="rootViewController" id="cib-bB-gWn"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2hn-8K-rUU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-900" y="2032"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="books.vertical" catalog="system" width="128" height="107"/>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="menucard" catalog="system" width="108" height="128"/>
-        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
