@@ -10,12 +10,12 @@ import Foundation
 class PeopleInfoViewModel {
     var infoItems = [Cast]()
     let manager = PeopleInfoManager()
-
+    
     var peopleID: Int
     
     var success: (() -> Void)?
     var error: ((String) -> Void)?
-
+    
     init(peopleID: Int) {
         self.peopleID = peopleID
     }

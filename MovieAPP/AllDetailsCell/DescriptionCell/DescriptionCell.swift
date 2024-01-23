@@ -13,10 +13,8 @@ class DescriptionCell: UICollectionViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     func configure(data: [MovieDetailModel]) {
-//        overviewLabel.text = title
         overviewLabel.text = data.description
     }
 }

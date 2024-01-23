@@ -25,10 +25,8 @@ class NetworkManager {
             switch response.result {
             case .success(let data):
                 completion(data, nil)
-                //                                print(data)
             case.failure(let error):
                 completion(nil, error.localizedDescription)
-                //                                print(response)
             }
         }
     }

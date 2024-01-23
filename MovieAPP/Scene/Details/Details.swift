@@ -28,7 +28,7 @@ struct Details: Codable {
     let video: Bool?
     let voteAverage: Double?
     let voteCount: Int?
-
+    
     enum CodingKeys: String, CodingKey {
         case adult
         case backdropPath = "backdrop_path"
@@ -54,7 +54,7 @@ struct Details: Codable {
 struct BelongsToCollection: Codable {
     let id: Int?
     let name, posterPath, backdropPath: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case id, name
         case posterPath = "poster_path"
@@ -73,7 +73,7 @@ struct ProductionCompany: Codable {
     let id: Int?
     let logoPath: String?
     let name, originCountry: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case id
         case logoPath = "logo_path"
@@ -85,7 +85,7 @@ struct ProductionCompany: Codable {
 // MARK: - ProductionCountry
 struct ProductionCountry: Codable {
     let iso3166_1, name: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case iso3166_1 = "iso_3166_1"
         case name
@@ -95,7 +95,7 @@ struct ProductionCountry: Codable {
 // MARK: - SpokenLanguage
 struct SpokenLanguage: Codable {
     let englishName, iso639_1, name: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case englishName = "english_name"
         case iso639_1 = "iso_639_1"
@@ -120,7 +120,3 @@ enum MovieDetailItemType: Codable {
 struct MovieDetailModel: Codable {
     let type: MovieDetailItemType
 }
-    
-   
-// CASE POSTER (STRING?)
-//CASE INFO (MOVIEINFO)

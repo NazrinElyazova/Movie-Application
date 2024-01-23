@@ -16,6 +16,7 @@ class PeopleInfoCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
     func configure(data: Cast) {
         titleInfo.text = data.title
         imageInfo.loadImage(url: data.backdropPath ?? "")

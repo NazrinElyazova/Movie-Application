@@ -33,7 +33,6 @@ class PopularCell: UICollectionViewCell {
 }
 extension PopularCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        print(movies.count)
         return movies.count
     }
     

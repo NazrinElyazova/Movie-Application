@@ -10,7 +10,7 @@ import UIKit
 class PeopleInfoController: UIViewController {
     @IBOutlet weak var collection: UICollectionView!
     
-    var viewModel: PeopleInfoViewModel?    
+    var viewModel: PeopleInfoViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()

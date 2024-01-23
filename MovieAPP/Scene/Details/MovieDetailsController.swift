@@ -34,7 +34,6 @@ class MovieDetailsController: UIViewController {
 }
 extension MovieDetailsController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //                        print(viewModel?.movieItems.count)
         return viewModel?.movieItems.count ?? 0
     }
     

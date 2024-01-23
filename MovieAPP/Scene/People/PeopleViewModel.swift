@@ -7,15 +7,8 @@
 
 import Foundation
 
-//struct PeopleModel {
-//    let title: String
-//    let people: [PeopleData]
-//}
-
 class PeopleViewModel {
     var items = [PeopleData]()
-    
-    var infoPerson = [Cast]()
     
     var peopleData: People?
     let manager = PeopleManager()

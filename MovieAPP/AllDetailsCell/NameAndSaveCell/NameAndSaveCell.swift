@@ -14,7 +14,6 @@ class NameAndSaveCell: UICollectionViewCell {
     @IBOutlet weak var movieNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     @IBAction func bookmarkButton(_ sender: Any) {

@@ -11,11 +11,6 @@ class GenreCell: UICollectionViewCell {
     
     var movieItems: [Genre]?
     
-//    var detail = [Details]()
-//    var viewModel = [DetailsViewModel]()
-    
-//    var items = [Genre]()
-    
     @IBOutlet weak var pg13Label: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var englishLabel: UILabel!
@@ -32,10 +27,10 @@ class GenreCell: UICollectionViewCell {
         self.collection.register(UINib(nibName: "\(ActionCell.self)", bundle: nil), forCellWithReuseIdentifier: "\(ActionCell.self)")
     }
     func configure(data: [Genre]) {
-//        imbdLabel.text = data.imdbID
-//        hourLbl.text = "\(data.runtime ?? 0)"
-//        englishLabel.text = data.originalLanguage
-//        pg13Label.text = "\(data.popularity ?? 0.0)"
+        //        imbdLabel.text = data.imdbID
+        //        hourLbl.text = "\(data.runtime ?? 0)"
+        //        englishLabel.text = data.originalLanguage
+        //        pg13Label.text = "\(data.popularity ?? 0.0)"
         
         self.movieItems = data
         collection.reloadData()
@@ -45,10 +40,9 @@ class GenreCell: UICollectionViewCell {
 }
 extension GenreCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //        print(movieItems?.count)
+        
         return movieItems?.count ?? 0
         
-        //        return items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

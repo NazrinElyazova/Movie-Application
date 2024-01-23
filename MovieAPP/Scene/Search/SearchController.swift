@@ -23,7 +23,6 @@ class SearchController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var searchView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        searchMovies()
         searchOutletButton.delegate = self
         configureUI()
         configureViewModel()
@@ -34,9 +33,6 @@ class SearchController: UIViewController, UITextFieldDelegate {
     }
     func configureViewModel() {
         guard searchOutletButton.text != nil else {return}
-        //
-        //        viewModel.getSearch(searchText: searchText)
-        
         viewModel.error = {
             errorMessage in
             print("Errooorr: \(errorMessage)")

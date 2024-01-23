@@ -30,7 +30,7 @@ struct Cast: Codable {
     let voteCount: Int?
     let character, creditID: String?
     let order: Int?
-
+    
     enum CodingKeys: String, CodingKey {
         case adult
         case backdropPath = "backdrop_path"
@@ -56,5 +56,3 @@ enum OriginalLanguage: String, Codable {
     case fr = "fr"
     case it = "it"
 }
-
-// MARK: - Encode/decode helpers
