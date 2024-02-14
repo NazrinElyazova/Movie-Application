@@ -8,9 +8,7 @@
 import UIKit
 
 class SearchCell: UICollectionViewCell {
-    var search = [Search]()
-    
-    
+
     @IBOutlet weak var nameLabelSearch: UILabel!
     
     @IBOutlet weak var imbdLabelSearch: UILabel!

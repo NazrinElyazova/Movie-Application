@@ -19,6 +19,7 @@ class PeopleViewModel {
     func getPeopleList() {
         manager.getPeopleList(pageNumber: (peopleData?.page ?? 0) + 1) {
             data, errorMessage in
+            print("========")
             if let errorMessage {
                 self.error? (errorMessage)
             } else if let data {
@@ -31,6 +32,7 @@ class PeopleViewModel {
     
     func pagination(index: Int) {
         if index == items.count-1 && (peopleData?.page ?? 0 <= peopleData?.totalPages ?? 0) {
+            print("+++++++")
             getPeopleList()
         }
     }

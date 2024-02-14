@@ -14,7 +14,7 @@ class PeopleController: UIViewController {
     
     let refreshControl = UIRefreshControl()
     
-    var id = 0
+//    var id = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()

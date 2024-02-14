@@ -8,10 +8,9 @@
 import UIKit
 
 class MovieDetailsController: UIViewController {
+    
     var viewModel: DetailsViewModel?
-    
-    
-    
+
     @IBOutlet weak var collection: UICollectionView!
     
     override func viewDidLoad() {
