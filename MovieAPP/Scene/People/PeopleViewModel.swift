@@ -19,7 +19,6 @@ class PeopleViewModel {
     func getPeopleList() {
         manager.getPeopleList(pageNumber: (peopleData?.page ?? 0) + 1) {
             data, errorMessage in
-            print("========")
             if let errorMessage {
                 self.error? (errorMessage)
             } else if let data {
@@ -36,6 +35,7 @@ class PeopleViewModel {
             getPeopleList()
         }
     }
+    
     func reset() {
         peopleData = nil
         items.removeAll()

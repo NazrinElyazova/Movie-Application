@@ -9,5 +9,4 @@ import Foundation
 
 protocol PeopleInfoUseCase {
     func getPeopleInfo(endpoint: PeopleInfoEndpoint, peopleID: Int?, completion: @escaping((PeopleInfo?, String?) -> Void))
-   
 }
