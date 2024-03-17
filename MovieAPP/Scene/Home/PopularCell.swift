@@ -32,6 +32,7 @@ class PopularCell: UICollectionViewCell {
     }
 }
 extension PopularCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return movies.count
     }
@@ -47,5 +48,4 @@ extension PopularCell: UICollectionViewDataSource, UICollectionViewDelegate, UIC
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         delegate?.movieItemSelection(movieId: movies[indexPath.item].id  ?? 0)
     }
-    
 }

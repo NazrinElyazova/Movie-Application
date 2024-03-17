@@ -10,13 +10,10 @@ import UIKit
 
 class MovieController: UIViewController {
     
-    
-    @IBOutlet weak var libraryButton: UIBarButtonItem!
-    
     private let viewModel = HomeViewModel()
     
+    @IBOutlet weak var libraryButton: UIBarButtonItem!
     @IBOutlet weak var collection: UICollectionView!
-    
     @IBOutlet weak var searchButton: UIBarButtonItem!
     
     override func viewDidLoad() {
