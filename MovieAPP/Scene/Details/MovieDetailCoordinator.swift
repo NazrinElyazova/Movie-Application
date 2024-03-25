@@ -24,3 +24,4 @@ class MovieDetailCoordinator: Coordinator {
         navigationController.show(controller, sender: nil)
     }
 }
+
