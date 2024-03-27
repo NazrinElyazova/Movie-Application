@@ -7,6 +7,16 @@
 
 import UIKit
 
+// Set username and password
+let username = "john"
+let password = "1234".data(using: .utf8)!
+// Set attributes
+let attributes: [String: Any] = [
+    kSecClass as String: kSecClassGenericPassword,
+    kSecAttrAccount as String: username,
+    kSecValueData as String: password,
+]
+
 class PeopleInfoController: UIViewController {
     @IBOutlet weak var collection: UICollectionView!
     

@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class MovieController: UIViewController {
     
     private let viewModel = HomeViewModel()
@@ -22,11 +21,18 @@ class MovieController: UIViewController {
         configureUI()
         configureViewModel()
     }
+    
+    @IBAction func searchButtonAction(_ sender: Any) {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "SearchController") as! SearchController
+        navigationController?.show(controller, sender: nil)
+    }
+    
     func configureUI() {
         title = "Movies"
         
         collection.register(UINib(nibName: "PopularCell", bundle: nil), forCellWithReuseIdentifier: "PopularCell")
     }
+    
     func configureViewModel() {
         viewModel.getItems()
         viewModel.error = { errorMessage in
@@ -37,10 +43,6 @@ class MovieController: UIViewController {
         }
     }
     
-    @IBAction func searchButtonAction(_ sender: Any) {
-        let controller = storyboard?.instantiateViewController(withIdentifier: "SearchController") as! SearchController
-        navigationController?.show(controller, sender: nil)
-    }
     func showMovieDetail(movieId: Int) {
         let coordinator = MovieDetailCoordinator(movieId: movieId, navigationController: navigationController ?? UINavigationController())
         coordinator.start()
