@@ -68,7 +68,6 @@
 		7BCF42282B304D64001AAB6E /* ActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BCF42262B304D64001AAB6E /* ActionCell.xib */; };
 		7BE03EA82B275CAE002824E1 /* MovieDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE03EA72B275CAE002824E1 /* MovieDetailsController.swift */; };
 		7BE03EAA2B276232002824E1 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE03EA92B276232002824E1 /* DetailsViewModel.swift */; };
-		7BFC1E9B2BB3F45900F72E9F /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC1E9A2BB3F45900F72E9F /* KeychainManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,7 +132,6 @@
 		7BCF42262B304D64001AAB6E /* ActionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionCell.xib; sourceTree = "<group>"; };
 		7BE03EA72B275CAE002824E1 /* MovieDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsController.swift; sourceTree = "<group>"; };
 		7BE03EA92B276232002824E1 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
-		7BFC1E9A2BB3F45900F72E9F /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,7 +332,6 @@
 				7BAA81E32B356F90004277DB /* PeopleInfoCoordinator.swift */,
 				7BAA81E52B3572BC004277DB /* PeopleInfoCell.swift */,
 				7BAA81E62B3572BC004277DB /* PeopleInfoCell.xib */,
-				7BFC1E9A2BB3F45900F72E9F /* KeychainManager.swift */,
 			);
 			path = PeopleInfo;
 			sourceTree = "<group>";
@@ -472,7 +469,6 @@
 				7B09CF692B2DADFF000C751F /* DescriptionCell.swift in Sources */,
 				7BAA81DE2B356B89004277DB /* PeopleInfoViewModel.swift in Sources */,
 				7BE03EA82B275CAE002824E1 /* MovieDetailsController.swift in Sources */,
-				7BFC1E9B2BB3F45900F72E9F /* KeychainManager.swift in Sources */,
 				7B1132332B2D683500052568 /* SearchEndpoint.swift in Sources */,
 				7B9DC46A2B2CAE36004BE723 /* PeopleEndpoint.swift in Sources */,
 				7BA444842B23730C0076ADFF /* PeopleViewModel.swift in Sources */,

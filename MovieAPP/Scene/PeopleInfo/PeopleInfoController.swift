@@ -7,21 +7,11 @@
 
 import UIKit
 
-// Set username and password
-let username = "john"
-let password = "1234".data(using: .utf8)!
-// Set attributes
-let attributes: [String: Any] = [
-    kSecClass as String: kSecClassGenericPassword,
-    kSecAttrAccount as String: username,
-    kSecValueData as String: password,
-]
-
 class PeopleInfoController: UIViewController {
-    @IBOutlet weak var collection: UICollectionView!
-    
     var viewModel: PeopleInfoViewModel?
-    
+
+    @IBOutlet weak var collection: UICollectionView!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,6 +36,7 @@ class PeopleInfoController: UIViewController {
         collection.register(UINib(nibName: "\(PeopleInfoCell.self)", bundle: nil), forCellWithReuseIdentifier: "\(PeopleInfoCell.self)")
     }
 }
+
 extension PeopleInfoController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         viewModel?.infoItems.count ?? 0
@@ -58,6 +49,7 @@ extension PeopleInfoController: UICollectionViewDataSource, UICollectionViewDele
         }
         return cell
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         .init(width: collectionView.frame.width, height: 350)
     }

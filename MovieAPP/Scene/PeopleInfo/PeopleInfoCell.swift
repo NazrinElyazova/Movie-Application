@@ -13,9 +13,6 @@ class PeopleInfoCell: UICollectionViewCell {
     @IBOutlet weak var overviewInfo: UILabel!
     @IBOutlet weak var titleInfo: UILabel!
     @IBOutlet weak var imageInfo: UIImageView!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
     
     func configure(data: Cast) {
         titleInfo.text = data.title
