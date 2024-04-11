@@ -12,7 +12,6 @@ class SearchController: UIViewController, UITextFieldDelegate {
     private let viewModel = SearchViewModel()
     
     @IBOutlet weak var collection: UICollectionView!
-    
     @IBOutlet weak var searchOutletButton: UITextField!
     
     @IBAction func searchTextField(_ sender: Any) {
